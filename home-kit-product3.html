@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC</title>
+    <link rel="icon" type="img/png" href="img/liverpool.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    h4 {
+        font-size: 15px;
+
+    }
+
+    .title-box {
+        margin-top: 50px;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .mybtn {
+        margin-left: 1350px;
+        
+        top: 200;
+        position: sticky;
+        z-index: 2;
+        border-radius: 50%;
+
+
+    }
+
+    .total-count {
+
+        margin-left: 7px;
+    }
+   
+   
+</style>
+
+<body>
+   
+    
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+            <!-- <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+                </div>
+              </nav> -->
+
+
+
+              
+
+
+              <a href="index.html"><img src="img/liverpool.png" class="logo"></a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Kit </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="home-kit.html">Home Kit</a>
+                    <a href="#base">Traning Kit </a>
+                    
+                </div>
+            </div>
+
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Fashion </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Kids </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">New Arrivals </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html" class="activePage">HOME</a><i class="fa fa-fw fa-home"></i></li>
+                <li><a href="shop.html">Fast shop</a><i class="fa fa-shopping-cart"></i></li>
+                <li><a href="contact.html">Contact</a><i class="fa fa-envelope" ></i></li>
+               
+            </ul>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">
+                <i class="fa fa-shopping-basket" ></i><span class="total-count"></span></button><button
+                class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+        <div class="mybtn2">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">
+                <i class="fa fa-shopping-basket" ></i><span class="total-count"></span></button><button
+                class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+    </div>
+    
+
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/homekit3.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">LFC Nike Home Stadium Socks 20/21</h4>
+                      <p class="card-text">Price: $14.95</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="new-arrival text-center">NEW</p>
+                    <h2>LFC Nike Home Stadium Socks 20/21</h2>
+                    <p>Product Code: CA79D </p>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+
+                    <p class="price">$ 14.95</p>
+                    <p><b>Availability:</b>In Stock</p>
+                    <p><b>Condition:</b>New</p>
+                    <p><b>Brand:</b>L.F.C</p>
+                    
+                    <a href="#" data-name="LFC-Nike-Home-Stadium-Socks-20/21" data-price="14.95" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="product-description">
+        <div class="container">
+            <h6>Product Description</h6>
+            <p>This core tshirt is a perfect addition to any Red's wardrobe. The LFC Mens Washed Navy Tee features: 
+
+                <p>Short sleeved tshirt in washed navy</p>
+                <p>Liverbird crest embroidered in washed navy</p>
+                <p>Materials: 100% Cotton</p>
+                
+                Please note: this item has been garment dyed.
+                 Colour rub is a natural characteristic of this dyeing process so please avoid contact with light coloured fabrics and upholstery.
+                  There will be gradual colour loss with wash which will add to the individuality of the garment.
+                   Direct exposure sunlight also may cause colour to change.</p>
+                   <hr>
+        </div>
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="home-kit-product1.html"><img src="img/homekit1.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wish list">
+                                <i class="fa fa-heart-o" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart" ></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <h3>LFC Nike Mens Home Stadium Jersey 20/21</h3>
+                        <h5>$69.95</h5>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="home-kit-product2.html"><img src="img/homekit2.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wish list">
+                                <i class="fa fa-heart-o" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart" ></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <h3>LFC Nike Mens Home Stadium Shorts 20/21</h3>
+                        <h5>$34.95</h5>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="home-kit-product4.html"><img src="img/homekit4.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wish list">
+                                <i class="fa fa-heart-o" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart" ></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <h3>LFC Nike Mens Home Goalkeeper Stadium Jersey 20/21</h3>
+                        <h5>$69.95</h5>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="home-kit-product5.html"><img src="img/homekit5.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wish list">
+                                <i class="fa fa-heart-o" ></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart" ></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                        <h3>LFC Nike Mens Home Goalkeeper Stadium Shorts 20/21</h3>
+                        <h5>$34.95</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img src="img/liverpool.png" height="50px" width="50px">
+              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+    
+              </table>
+              <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+      <section class="footer">
+        <div class="container tex-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p> <a href="contact.html">Contact Us</p></a> 
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3 ">
+                    <h1>Follow Us On</h1>
+
+                    
+                    <p> <a href="https://www.facebook.com/LiverpoolFC/"> <i class="fa fa-facebook-official"></i> Facebook</p></a>
+                    <p> <a href="https://www.youtube.com/user/LiverpoolFC"><i class="fa fa-youtube-play"></i> YouTube</p></a>
+                    <p> <a href="https://www.linkedin.com/company/liverpool-football-club"><i class="fa fa-linkedin"></i> Linkedin</p></a>
+                    <p> <a href="https://twitter.com/lfc"><i class="fa fa-twitter"></i> Twitter</p></a>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <a href="https://play.google.com/store/apps/details?id=tv.liverpoolfc&hl=en_US"><img src="img/footerpic1.png"></a>
+                    <a href="https://apps.apple.com/us/app/the-official-liverpool-fc-app/id332227346"><img src="img/footerpic2.png"></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Made With <i class="fa fa-heart-o"></i> by Mhmod Igbaria </p>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>
